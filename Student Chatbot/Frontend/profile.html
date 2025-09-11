@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>My Profile - HackStreet</title>
+    <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+    <header class="header">
+        <img src="97e6f81c-6da9-4848-9fa3-d70de7ace3e1.jpeg" alt="HackStreet Logo" class="logo" />
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home <span class="arrow">➤</span></a></li>
+                <li><a href="profile.html" class="active">Profile <span class="arrow">➤</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title">My Profile</h2>
+
+        <div id="profile-container" class="profile-card">
+            <!-- Profile details will be loaded here -->
+        </div>
+
+        <div id="upload-section" class="upload-section">
+            <label for="photoInput" class="upload-label">📸 Upload Profile Photo</label>
+            <input type="file" id="photoInput" accept="image/*" onchange="handlePhotoUpload()" />
+        </div>
+    </main>
+
+    <script src="profile.js"></script>
+</body>
+</html>

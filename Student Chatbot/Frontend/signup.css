@@ -1,0 +1,159 @@
+/* signup.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+/*home*/
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #007BFF; /* A nice blue color */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+
+form {
+    background: rgba(30, 41, 59, 0.95);
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(66, 133, 244, 0.4);
+    width: 350px;
+}
+
+/* Labels styling */
+label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #a5b1c2;
+}
+
+/* Inputs styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: #223344;
+    color: #e0e6f1;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+    background: #30475e;
+    box-shadow: 0 0 8px #4285F4;
+    color: #fff;
+}
+
+/* Password wrapper and toggle icon positioning */
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-eye {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.2rem;
+    color: #6c8ed9;
+    transition: color 0.3s ease;
+}
+
+.toggle-eye:hover {
+    color: #aec6ff;
+}
+
+/* Button styling */
+button[type="submit"] {
+    width: 100%;
+    background: #4285F4;
+    color: #fff;
+    border: none;
+    padding: 14px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(66, 133, 244, 0.6);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background: #3367d6;
+    box-shadow: 0 6px 20px rgba(51, 103, 214, 0.8);
+}
+
+/* Spacing */
+br + br {
+    margin-bottom: 1rem;
+}
+
+/* Responsive tweak */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+        padding: 2rem;
+    }
+}
+/* Already have an account link */
+/* Already have an account link */
+/* Already have an account link */
+.login-link {
+  position: fixed;
+  bottom: 15px;
+  left: 20px;   /* changed from right → left */
+  font-size: 0.95rem;
+  color: #4cd137;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.login-link:hover {
+  color: #44bd32;
+  text-decoration: underline;
+}
+

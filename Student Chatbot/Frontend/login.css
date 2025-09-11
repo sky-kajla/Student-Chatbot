@@ -1,0 +1,138 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f4c81, #030f4a);
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/*home*/
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #007BFF; /* A nice blue color */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* Heading */
+h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #00bfff;
+}
+
+/* Form container */
+form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00bfff;
+    width: 350px;
+}
+
+/* Label styling */
+label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+    color: #cdf0ff;
+}
+
+/* Input styles */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #112a46; /* dark blue shade */
+    color: #e0eaff;
+    font-size: 1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input focus */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    background: #164a87;
+    box-shadow: 0 0 8px #00bfff;
+    color: #fff;
+}
+
+/* Password wrapper for the eye icon */
+.password-wrapper {
+    position: relative;
+}
+
+/* Toggle eye styling */
+.toggle-eye {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #00bfff;
+    user-select: none;
+    transition: color 0.3s;
+}
+
+.toggle-eye:hover {
+    color: #66d9ff;
+}
+
+/* Submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background: #00bfff;
+    color: #0a1d2d;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00bfff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: #008ecc;
+    box-shadow: 0 0 20px #33bbff;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}

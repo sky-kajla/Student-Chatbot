@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - HackStreet</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        
+        .password-wrapper {
+            position: relative;
+        }
+
+        .toggle-eye {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<a href="index.html" class="home-button">Home</a>
+<body>
+    <h2>Login to HackStreet</h2>    
+    <br>
+    
+    <form onsubmit="handleLogin(event)">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <div class="password-wrapper">
+            <input type="password" id="loginPassword" required>
+            <span class="toggle-eye" onclick="togglePassword('loginPassword', this)">👁️</span>
+        </div><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        function togglePassword(fieldId, eyeIcon) {
+            var input = document.getElementById(fieldId);
+            if (input.type === "password") {
+                input.type = "text";
+                eyeIcon.textContent = "🙈";
+            } else {
+                input.type = "password";
+                eyeIcon.textContent = "👁️";
+            }
+        }
+    </script>
+    <script type="text/javascript" src="login.js"></script>
+</body>
+</html>
